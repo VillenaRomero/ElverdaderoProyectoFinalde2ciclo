@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1666898824738559421}
   m_Layer: 0
   m_Name: puerta de salida
-  m_TagString: enemigo
+  m_TagString: puerta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
