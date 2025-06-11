@@ -6,6 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Mainmenu.unity
+    guid: f0cae0b89d039464e8339f8ea8195767
+  - enabled: 1
+    path: Assets/Scenes/Configuracion.unity
+    guid: 4d7e16c58fa7a034fb926ee6a8b510d7
+  - enabled: 1
+    path: Assets/Scenes/creditos.unity
+    guid: ec65210e60d4dde4d876bb41d2dca5b4
+  - enabled: 1
+    path: Assets/Scenes/derrota.unity
+    guid: 09ab3083e7e37694a9388b8f8e501b24
+  - enabled: 1
+    path: Assets/Scenes/elegirescenario.unity
+    guid: 521e577e0894f214c96c74f7fbeb096c
+  - enabled: 1
+    path: Assets/Scenes/escenario unopresentacion.unity
+    guid: e56cd4d18138d334992ac5e9a86b1a16
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: aa648030091b87044aad2b68e6a05c1d
+  - enabled: 1
+    path: Assets/Scenes/game1.unity
+    guid: c7d7f2014b098904791400657cba3f7a
+  - enabled: 1
+    path: Assets/Scenes/game2.unity
+    guid: 8f60929d34fdc0d49b25c9eb300c5571
+  - enabled: 1
+    path: Assets/Scenes/game3.unity
+    guid: f6b0b9688554ec640a622f5ad9b6eb60
+  - enabled: 1
+    path: Assets/Scenes/game4.unity
+    guid: a690f57e0cf9465448b08d5b3046452d
+  - enabled: 1
+    path: Assets/Scenes/habitacion1.unity
+    guid: b64dae356fc82ca4db6c1eb8df2d7ef0
+  - enabled: 1
+    path: Assets/Scenes/habitacion2.unity
+    guid: 9a21e3bce7a66154cb2825dbf0ea0893
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:

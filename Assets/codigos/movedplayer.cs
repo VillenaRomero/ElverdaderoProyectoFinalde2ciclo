@@ -12,19 +12,24 @@ public class movedplayer : MonoBehaviour
     private SpriteRenderer _comSpriteRenderer;
     public string nametag = "puerta";
     public string nametag2;
+    public string nametag3;
+    public string nametag4;
     public string nivel;
     public string nivel2;
     public float timeTiCreate = 30;
     public float currentTimetuCreate;
+    private SwitchTrigger currentSwitch;
+    public GameObject codePanel, openedSafe;
+
+    public static bool isSafeOpened = false;
+
 
     private void Awake()
     {
         _compRigidbody2D = GetComponent<Rigidbody2D>();
         _comSpriteRenderer = GetComponent<SpriteRenderer>();
-
-    }
-    void Start()
-    {
+        codePanel.SetActive(false);
+        openedSafe.SetActive(false);
 
     }
     void Update()
@@ -55,6 +60,14 @@ public class movedplayer : MonoBehaviour
         {
             SceneManager.LoadScene(nivel2);
         }
+        if (currentSwitch != null && Input.GetKeyDown(KeyCode.E))
+        {
+            currentSwitch.Toggle();
+        }
+        if (isSafeOpened) {
+            codePanel.SetActive(false);
+            openedSafe.SetActive(true);
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -68,6 +81,30 @@ public class movedplayer : MonoBehaviour
             if (life <= 0) {
                 SceneManager.LoadScene(nivel2);
             }
+        }
+        if (collision.gameObject.tag == nametag3) {
+            SceneManager.LoadScene(nivel2);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Interruptor"))
+        {
+            currentSwitch = other.GetComponent<SwitchTrigger>();
+        }
+        if (other.gameObject.tag == nametag4 && !isSafeOpened) {
+            codePanel.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Interruptor"))
+        {
+            currentSwitch = null;
+        }
+        if (other.gameObject.tag == nametag4) {
+            codePanel.SetActive(false);
         }
     }
 }
