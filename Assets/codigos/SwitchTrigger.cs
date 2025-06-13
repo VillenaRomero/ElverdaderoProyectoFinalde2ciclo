@@ -3,8 +3,8 @@ using UnityEngine.Rendering.Universal;
 
 public class SwitchTrigger : MonoBehaviour
 {
-    public GameObject luzAPrefab;
-    public GameObject luzBPrefab;
+    public GameObject luzandbloodAPrefab;
+    public GameObject luzandbloodBPrefab;
 
     public Transform puntoInstancia; // Lugar donde se crean las luces
 
@@ -15,25 +15,23 @@ public class SwitchTrigger : MonoBehaviour
     {
         activo = !activo;
 
-        // Eliminar luz actual
         if (luzActual != null)
         {
             Destroy(luzActual);
         }
 
-        // Instanciar nueva luz según el estado
         if (activo)
         {
-            if (luzBPrefab != null && puntoInstancia != null)
+            if (luzandbloodBPrefab != null && puntoInstancia != null)
             {
-                luzActual = Instantiate(luzBPrefab, puntoInstancia.position, Quaternion.identity);
+                luzActual = Instantiate(luzandbloodBPrefab, puntoInstancia.position, Quaternion.identity);
             }
         }
         else
         {
-            if (luzAPrefab != null && puntoInstancia != null)
+            if (luzandbloodAPrefab != null && puntoInstancia != null)
             {
-                luzActual = Instantiate(luzAPrefab, puntoInstancia.position, Quaternion.identity);
+                luzActual = Instantiate(luzandbloodAPrefab, puntoInstancia.position, Quaternion.identity);
             }
         }
     }

@@ -88,7 +88,7 @@ public class movedplayer : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Interruptor"))
+        if (other.gameObject.tag =="Interruptor")
         {
             currentSwitch = other.GetComponent<SwitchTrigger>();
         }
@@ -99,7 +99,7 @@ public class movedplayer : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Interruptor"))
+        if (other.gameObject.tag =="Interruptor")
         {
             currentSwitch = null;
         }

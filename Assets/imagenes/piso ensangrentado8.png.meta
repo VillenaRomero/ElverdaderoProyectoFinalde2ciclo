@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 15c5bf211b3eacd48930576836eef168
+guid: 23e8db866d5b3e84a9f75bb09d19ecd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4688234675439680690
-    second: piso de madera_0
+      213: 7133975126284941511
+    second: piso ensangrentado8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piso de madera_0
+      name: piso ensangrentado8_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e43cfbae66b00feb0800000000000000
-      internalID: -4688234675439680690
+      spriteID: 7c8bfa67498f00360800000000000000
+      internalID: 7133975126284941511
       vertices: []
       indices: 
       edges: []
