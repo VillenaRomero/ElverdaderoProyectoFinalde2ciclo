@@ -1,13 +1,12 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class crearotrapalanca : MonoBehaviour
+public class CrearObjetodeBloqueo : MonoBehaviour
 {
-    public GameObject palancaprefab;
+    public GameObject bloqueo;
     public float xposition;
     public float yPosition;
-
     public string nametag = "player";
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -18,12 +17,12 @@ public class crearotrapalanca : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == nametag)
         {
             Vector2 positioncreate = new Vector2(xposition, yPosition);
-            GameObject palanca = Instantiate(palancaprefab, positioncreate, transform.rotation);
+            GameObject palanca = Instantiate(bloqueo, positioncreate, transform.rotation);
             Destroy(this.gameObject);
         }
     }

@@ -75,13 +75,6 @@ public class movedplayer : MonoBehaviour
         {
             SceneManager.LoadScene(nivel);
         }
-        if (collision.gameObject.tag == nametag2)
-        {
-            life--;
-            if (life <= 0) {
-                SceneManager.LoadScene(nivel2);
-            }
-        }
         if (collision.gameObject.tag == nametag3) {
             SceneManager.LoadScene(nivel2);
         }
@@ -94,6 +87,14 @@ public class movedplayer : MonoBehaviour
         }
         if (other.gameObject.tag == nametag4 && !isSafeOpened) {
             codePanel.SetActive(true);
+        }
+        if (other.gameObject.tag == nametag2)
+        {
+            life--;
+            if (life <= 0)
+            {
+                SceneManager.LoadScene(nivel2);
+            }
         }
     }
 

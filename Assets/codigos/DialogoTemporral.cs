@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class DialogoTemporral : MonoBehaviour
 {
     public Text dialogoUI;
-    public string mensaje = "¡Hola!";
+    public string mensaje;
     public float duracion = 3f;
     private float tiempoRestante = 0f;
 
@@ -20,9 +20,10 @@ public class DialogoTemporral : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.tag=="Player")
+        if (collision.gameObject.tag == "player")
         {
             dialogoUI.text = mensaje;
             dialogoUI.enabled = true;

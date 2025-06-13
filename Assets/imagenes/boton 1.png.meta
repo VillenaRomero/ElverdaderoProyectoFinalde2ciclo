@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1a16255592cc59a4e9b10fca7640e5c8
+guid: a0fe539eeb9cf7e42a73535c3a68dcd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1309808594622912823
-    second: piso ensangrentado4_0
+      213: -3427443288308981933
+    second: boton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piso ensangrentado4_0
+      name: boton_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 446
         y: 0
-        width: 1920
-        height: 1020
+        width: 1109
+        height: 785
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c66fb9d500a2dde0800000000000000
-      internalID: -1309808594622912823
+      spriteID: 35fdb881d764f60d0800000000000000
+      internalID: -3427443288308981933
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      piso ensangrentado4_0: -1309808594622912823
+      boton_0: -3427443288308981933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

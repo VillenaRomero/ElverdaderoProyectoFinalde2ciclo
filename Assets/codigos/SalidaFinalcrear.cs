@@ -4,7 +4,8 @@ public class SalidaFinalcrear : MonoBehaviour
 {
     public int vidaJefe = 3;
     public GameObject salidaFinalPrefab;
-    public Transform spawnerpuerta;
+    public float xposition;
+    public float yPosition;
 
     public void QuitarVida()
     {
@@ -18,7 +19,8 @@ public class SalidaFinalcrear : MonoBehaviour
     {
         if (salidaFinalPrefab != null)
         {
-            Instantiate(salidaFinalPrefab, spawnerpuerta.position, transform.rotation);
+            Vector2 positioncreate = new Vector2(xposition, yPosition);
+            GameObject boton = Instantiate(salidaFinalPrefab, positioncreate, transform.rotation);
         }
     }
 }
